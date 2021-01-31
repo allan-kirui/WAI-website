@@ -1,0 +1,175 @@
+
+.bodydets{
+    background-image: url(../Images/Fenty\ Barbados.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;;
+    font-size: 30px;
+    text-align: center;
+    color: wheat;
+    animation-name: slidein;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;;
+    color: wheat;
+    animation-name: slidein;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
+a{
+    color: rgb(241, 46, 231);
+}
+a:hover {
+    color: rgb(18, 190, 18);
+  }
+.menubtn {
+    background-color:black ;
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    margin-top: 5px;
+    position: fixed;
+    border-radius: 10px;
+  }
+  .nav{
+      position: absolute;
+      display: inline-block;
+      z-index: 32;
+  }
+  .dropdown  {
+    display: none;
+    position: absolute;
+    background-color: hotpink;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    border: 0;
+    border-radius: 10px;
+    border-bottom: 3px solid #333;
+  }
+  .dropdown ul li a{
+      color: black;
+      padding: 12px 0px;
+      text-decoration: none;
+      display: block;
+      align-self: center;
+  }
+  .dropdown ul li a:hover {
+      display :block;
+      opacity:.5;   
+  }
+  .dropdown a:hover{
+      display :block;
+      opacity:.5;
+  }
+  .nav:hover .dropdown{
+      z-index: 1;
+      display: block;
+  }
+  .subctn{
+      display: block;
+  }
+  .subnavbtn:hover .subctn{
+      display: block;
+  }
+  .subnavbtn{
+      color: black;
+      background-color:hotpink;
+  }
+  
+  .form-dets{
+      background-color:  wheat;
+      margin: 10px;
+      margin-top: 30px;
+      padding: 15px;
+      border-radius: 10px;
+  }
+ .wrapper{
+      margin-top: 50px;
+      padding: 50px;
+  }
+  
+  #pagination {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .buttn{
+   float: right;
+  
+  }
+  
+  a.bttn, button.bttn{
+    top: 1.5em;
+    text-decoration: none;
+    background: limegreen;
+    color: white;
+    margin: auto;
+    padding: .8em 3em;
+    -webkit-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+    -moz-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+    box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+    border-radius: 25px;
+    -webkit-transition: all .4s ease;
+          -moz-transition: all .4s ease;
+          -o-transition: all .4s ease;
+          transition: all .4s ease;
+}
+
+a.bttnLout {
+  top: 1.5em;
+  text-decoration: none;
+  background: red;
+  color: white;
+  margin: auto;
+  padding: .8em 3em;
+  -webkit-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+  -moz-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+  box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+  border-radius: 25px;
+  -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+}
+
+  #pagination a {
+    color: hotpink;
+    float: left;
+    padding: 8px 16px;
+    margin: 0 4px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid wheat;
+  }
+  
+  #pagination a:active {
+    background-color: rgb(18, 190, 18);
+    color: black;
+    border-radius: 5px;
+  }
+  
+  #pagination a:hover {
+    background-color: wheat;
+    border-radius: 5px;
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }

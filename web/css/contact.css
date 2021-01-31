@@ -1,0 +1,124 @@
+*{
+    color: black;
+}
+body {
+    font-family: sans-serif;
+   
+  }
+.bodydetscont{
+    background-image: url(../Images/Steafa.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+ #content{
+    background-color:blanchedalmond;
+    margin-left: 5px;
+    margin-top: 0px;
+    padding-top: 0cm;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+} 
+form.formdets,form.rating {
+    display: table;
+    margin-top: 90px;
+    animation-name: slidein;
+    animation-duration: 2s;
+}
+
+div.formdets,div.rating {
+    display: table-row;
+}
+
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
+.mapContainerGoogle{
+   overflow:hidden;
+    padding-bottom:75%;
+    position: relative;
+    height:0;
+    border-radius: 10px;
+    background-color: tan;
+    animation-name: slidein;
+    animation-duration: 2s;
+    }
+.mapContainerGoogle iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    padding: 3px;
+    }
+#dialog p{
+    display:hidden;
+}
+#forSubscribers{
+    background-color: rgb(255, 0, 34);
+    color: black;
+}
+.rating {
+        unicode-bidi: bidi-override;
+        direction: rtl;
+        margin-left:90px;
+      }
+.rating > span {
+        width: 1.1em;
+      }
+.rating > span:hover:before,.rating>span:hover ~ span:before {
+        content: "\2605";
+        position: absolute;
+     }
+h2{
+    color:white;
+}
+h4{
+    color: black;
+    font-family: cursive;
+}
+#wrapper {
+        margin-left: 5px;    
+        background: blanchedalmond;
+        padding-top: 5px;
+        padding-left: 15px;
+        padding-right: 5px;
+        border-radius: 10px;
+      }
+ input {
+        margin: 5px 10px;
+      }
+ button {
+        font-size: 18px;
+        padding: 10px;
+        margin: 20px 0;
+        color: white;
+        border: 0;
+        border-radius: 10px;
+        border-bottom: 3px solid #333;
+      }
+ #submit,#subscribe {
+        background: green;
+      }
+ #reset {
+        background: red;
+      }
+ #answer {
+        border: 1px dashed #ccc;
+        background: #eee;
+        padding: 10px;
+      } 
+
+
+
+  @media (min-width: 768px){
+      #forSubscribers{
+          margin-top: 65px;
+      }
+      
+      }

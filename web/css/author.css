@@ -1,0 +1,93 @@
+.authorDets{
+    background-image: url(../Images/Africa.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.authDets{
+    color: wheat;
+}
+.gallery {
+    margin-top:20px;
+    margin-left: 35px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    z-index: 2;
+  }
+
+.gallery:hover {
+    width: 60%;
+    transform:scale(1.1);
+    cursor: pointer;
+  }
+.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  #content{
+      padding-left: 50px;
+      margin-top: 80px;
+  }
+  #authContent{
+      display: inline-block;
+  }
+  .footer,a{
+      display: inline-block;
+  }
+  table{
+      background-color: wheat;
+      border-radius: 10px;
+      border-collapse: collapse;
+      width:100%;
+      height:50%;
+  }
+  table,td,th{
+    border:solid black;
+  }
+  td,th{
+      padding:15px;
+  }
+  .tableInput{
+      background-color: wheat;
+      margin-left: 15px;
+  }
+  #circleSVG{
+    position: center;
+    left:150px;
+    padding-right: 40px;
+  }
+
+ #Circle{
+    animation-name: moveCircle;
+ }
+ #btnTable{
+  background-color: rgb(247, 221, 173);
+  color: black;
+ }
+  @keyframes moveCircle {
+    from { margin-left: 100%;
+        width: 300%;  }
+    to {margin-left: 0%;
+        width: 100%; }
+  }
+  @keyframes rotation {
+    from {transform: rotate(0deg);}
+    to   {transform: rotate(359deg);}
+}
+  
+  @media (min-width: 768px){
+      .gallery{
+          margin-bottom: 30px;
+          display: table;
+        }
+        #circleSVG{
+            position: relative;
+            left:440px;
+            padding-right: 50px;
+          }
+  }

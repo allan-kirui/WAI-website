@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  color: wheat;
+  margin:-10px;
+  padding: 40px;
+  padding-left: 19px;
+  background-image: url(/Images/OldTown.jpg);
+  border-radius: 10px;
+}
+
+.error{
+  color: red;
+
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: tan;
+  color: black;
+  border-radius: 10px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;;
+    font-size: 30px;
+    text-align: center;
+    color: wheat;
+    animation-name: slidein;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
+
+
+/* Set a style for the submit/register button */
+.loginbtn
+ {
+  background-color:rgb(18, 190, 18);
+  color: hotpink;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.loginbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: hotpink;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: tan;
+  text-align: center;
+}
+
+.menubtn {
+  background-color:black ;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  margin-top: 5px;
+  position: fixed;
+  border-radius: 10px;
+}
+.nav{
+    position: absolute;
+    display: inline-block;
+    z-index: 32;
+}
+.dropdown  {
+  display: none;
+  position: absolute;
+  background-color: rgb(241, 46, 231);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  position: fixed;
+  top: 50px;
+  border: 0;
+  border-radius: 10px;
+  border-bottom: 3px solid #333;
+}
+.dropdown ul li a{
+    color: black;
+    padding: 12px 0px;
+    text-decoration: none;
+    display: block;
+    align-self: center;
+}
+.dropdown ul li a:hover {
+    display :block;
+    opacity:.5;
+    
+}
+.dropdown a:hover{
+    display :block;
+    opacity:.5;
+}
+.nav:hover .dropdown{
+    z-index: 1;
+    display: block;
+}
+.subctn{
+    display: block;
+}
+.subnavbtn:hover .subctn{
+    display: block;
+}
+.subnavbtn{
+    color: black;
+    background-color:hotpink;
+}
+.registerbtn {
+  background-color:rgb(18, 190, 18);
+  color: wheat;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+
+.registerbtn:hover, .loginbtn:hover {
+  opacity:1;
+  color: white;
+}
+
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
